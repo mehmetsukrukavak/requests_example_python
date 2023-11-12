@@ -16,5 +16,7 @@ post_url = f"https://jsonplaceholder.typicode.com/todos"
 headers = {"Content-Type":"application/json"}
 #post_response = requests.post(post_url, json=to_do_item, headers=headers)
 post_response = requests.post(post_url, data=json.dumps(to_do_item), headers=headers)
-
 print(post_response.json())
+
+
+
